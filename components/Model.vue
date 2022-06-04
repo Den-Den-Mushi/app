@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import "@google/model-viewer";
+if (process.client) import("@google/model-viewer");
 
 defineProps<{
   model: string;
@@ -18,6 +18,7 @@ defineProps<{
       shadow-intensity="1"
       camera-controls
       disable-zoom
+      @contextmenu.prevent
     />
   </ClientOnly>
 </template>
