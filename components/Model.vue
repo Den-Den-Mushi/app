@@ -19,6 +19,13 @@ defineProps<{
       camera-controls
       disable-zoom
       @contextmenu.prevent
+      v-bind="$attrs"
     />
   </ClientOnly>
 </template>
+
+<style scoped>
+model-viewer {
+  --poster-color: transparent;
+}
+</style>
