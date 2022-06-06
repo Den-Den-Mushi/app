@@ -4,7 +4,7 @@ useHead({
     lang: "en",
   },
   bodyAttrs: {
-    class: "bg-gray-100 mx-auto container",
+    class: "bg-gray-100",
   },
 });
 </script>
